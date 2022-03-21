@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+
+    <div class="container p-5">
+        <h1>American Connetion</h1>
+ 
+
+            <div class="col 3">
+                <h2>Crear un archivo</h2>
+                <form action="/crear">
+
+                <div class="mb-3">
+                    <label for="" class="form-label">nombre de archivo</label>
+                    <input type="text" name="nombre" class="form-control" id="nombre_archivo" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Contenido</label>
+                    <textarea name="Contenido" id="contenido" cols="30" rows="10" class="form-control" required>                 
+                    </textarea>
+                </div>
+                <input type="submit" class="btn btn-primary" value="crear archivo">
+                </form>
+            </div>
+            <br>
+
+            <div class="col 3">
+                <h2>Leer un archivo</h2>		
+                <form action="/leer">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nombre de archivo</label>
+                        <input name="nombreLeer" type="text" class="form-control" id="" required>
+                    </div>
+                        <input type="submit" class="btn btn-info text-white" value="Leer archivo" >	
+                </form>
+            </div>
+            <br>
+
+            <div class="col 3">
+                <h2>Renombrar un archivo</h2>
+                <form action="/renombrar">
+                    
+                    <div class="mb-3">
+                    <label for="" class="form-label">Nombre de archivo</label>
+                    <input name="nombreRenombrar" type="text" class="form-control" id="" aria-describedby="emailHelp" required>
+                </div>
+    
+                <div class="mb-3">
+                    <label for="" class="form-label">Nuevo nombre de archivo</label>
+                    <input name="nombreCambiado" type="text" class="form-control" id="" aria-describedby="emailHelp" required>
+                </div>
+                    <input type="submit" class="btn btn-warning" value="Renombrar archivo" >	
+                </form>
+            </div>
+            <br>
+
+            <div class="col 3">
+                <h2>Eliminar un archivo</h2>
+                <form action="/eliminar">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Nombre de archivo</label>
+                        <input name="nombreEliminar" type="text" class="form-control" id="" aria-describedby="emailHelp" required>
+                    </div>
+                        <input type="submit" class="btn btn-danger" value="Eliminar archivo" >	
+                </form>
+            </div>
+            <br><br>
+
+
+        
+    </div>
+
+
+    
+</body>
+</html>
